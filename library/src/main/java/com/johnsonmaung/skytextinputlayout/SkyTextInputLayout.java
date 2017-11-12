@@ -58,7 +58,7 @@ public class SkyTextInputLayout extends LinearLayout {
         hint = typedArray.getString(R.styleable.SkyTextInputLayout_android_hint);
         text = typedArray.getString(R.styleable.SkyTextInputLayout_android_text);
 
-        error_color = typedArray.getColor(R.styleable.SkyTextInputLayout_textColorError,
+        error_color = typedArray.getColor(R.styleable.SkyTextInputLayout_errorColor,
             ContextCompat.getColor(getContext(), R.color.error_color));
         error = typedArray.getString(R.styleable.SkyTextInputLayout_error);
 
