@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <color name="dividercolor">#8fff</color>
+  <color name="divider_color">#33000000</color>
+  <color name="error_color">#9B2243</color>
 </resources>
