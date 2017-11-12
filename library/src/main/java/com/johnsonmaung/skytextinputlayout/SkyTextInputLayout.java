@@ -9,6 +9,7 @@ import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.text.method.TransformationMethod;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.EditText;
@@ -209,5 +210,9 @@ public class SkyTextInputLayout extends LinearLayout {
 
   public int getInputType() {
     return edt.getInputType();
+  }
+
+  public void setTransformationMethod(TransformationMethod transformationMethod) {
+    edt.setTransformationMethod(transformationMethod);
   }
 }

@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
     ButterKnife.bind(this);
     //stil.addTextChangedListener(new );
+    //stil.setTransformationMethod(new PasswordTransformationMethod());
   }
 
   @OnClick(R.id.btn) public void test() {
