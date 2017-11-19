@@ -20,6 +20,6 @@ allprojects {
 ```
 dependencies
 {
-    compile 'com.github.Johnsonmaung:SkyTextInputLayout:v1.0.0-beta.1'
+    compile 'com.github.Johnsonmaung:SkyTextInputLayout:v1.0.0-beta.5'
 }
 ```

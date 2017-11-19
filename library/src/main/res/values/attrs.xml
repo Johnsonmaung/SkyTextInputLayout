@@ -8,6 +8,7 @@
     <attr name="android:maxLength"/>
     <attr name="android:maxLines"/>
     <attr name="android:inputType"/>
+    <attr format="color" name="hintColor"/>
     <attr format="color" name="errorColor"/>
     <attr format="string" name="error"/>
   </declare-styleable>

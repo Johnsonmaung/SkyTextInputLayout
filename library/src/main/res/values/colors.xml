@@ -2,4 +2,5 @@
 <resources>
   <color name="divider_color">#33000000</color>
   <color name="error_color">#9B2243</color>
+  <color name="hint_color">#C1B2B6</color>
 </resources>

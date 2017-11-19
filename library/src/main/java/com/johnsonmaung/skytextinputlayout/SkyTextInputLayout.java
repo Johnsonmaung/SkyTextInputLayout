@@ -2,7 +2,6 @@ package com.johnsonmaung.skytextinputlayout;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Color;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.text.Editable;
@@ -26,11 +25,11 @@ public class SkyTextInputLayout extends LinearLayout {
   EditText edt;
   View v;
 
-  int error_color;
-  String error = "";
-
+  int hint_color;
   String hint = "";
   String text = "";
+  int error_color;
+  String error = "";
   int inputType = -1;
   int imeOptions = -1;
   InputFilter[] inputFilters = null;
@@ -55,6 +54,9 @@ public class SkyTextInputLayout extends LinearLayout {
       TypedArray typedArray =
           getContext().obtainStyledAttributes(attrs, R.styleable.SkyTextInputLayout);
       try {
+
+        hint_color = typedArray.getColor(R.styleable.SkyTextInputLayout_hintColor,
+            ContextCompat.getColor(getContext(), R.color.hint_color));
 
         hint = typedArray.getString(R.styleable.SkyTextInputLayout_android_hint);
         text = typedArray.getString(R.styleable.SkyTextInputLayout_android_text);
@@ -117,7 +119,7 @@ public class SkyTextInputLayout extends LinearLayout {
 
       @Override public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
         String text = charSequence.toString();
-        tv.setTextColor(Color.GRAY);
+        tv.setTextColor(hint_color);
         tv.setText(edt.getHint());
 
         if (TextUtils.isEmpty(text)) {
@@ -180,7 +182,7 @@ public class SkyTextInputLayout extends LinearLayout {
     } else {
       tv.setVisibility(VISIBLE);
     }
-    tv.setTextColor(Color.GRAY);
+    tv.setTextColor(hint_color);
     tv.setText(hint);
   }
 

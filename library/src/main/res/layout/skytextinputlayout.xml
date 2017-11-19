@@ -11,7 +11,10 @@
       android:id="@+id/tv"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:paddingLeft="8dp"
       android:textAllCaps="true"
+      android:textColor="@color/hint_color"
+      android:textSize="10sp"
       android:visibility="invisible"
       tools:text="Phone"
       tools:visibility="visible"
@@ -23,10 +26,12 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:background="@android:color/transparent"
+      android:padding="8dp"
       android:paddingBottom="8dp"
       android:paddingTop="8dp"
       tools:hint="Phone"
       tools:text="09123456789"
+      style="@style/TextAppearance.AppCompat.Body1"
       />
 
   <View
